@@ -1,0 +1,62 @@
+ *
+                    {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    h1
+                    {
+                        font-family: 'Times New Roman', Times, serif;
+                        font-size: 25px;
+                        text-align: center;
+                        color: rgb(30, 194, 194);
+                    }
+                    p
+                    {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 15px;
+                        text-align: justify;
+                    }
+                    img
+                    {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    header
+                    {
+                        text-align: center;
+                        background-color: #44b6ef;
+                        padding: 20px;
+                        opacity: 0.8;
+                    }
+                    footer
+                    {
+                        text-align: center;
+                        background-color: #44b6ef;
+                        padding: 10px;
+                        width: 100%;
+                        opacity: 0.8;
+                        
+                    }
+                    h6{text-align: right;}
+                    h3
+                    {
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    div
+                    {
+                        display: block;
+                        width: 80%;
+                        margin: auto;
+                        padding: 50px;
+                        background-color: #f0f0f0;
+                        opacity: 0.8; 
+                        border-radius: 10px;
+                    }
+                    body 
+                    {
+                        background-image: url('../img/Montanhas.jpg');    
+                    }
