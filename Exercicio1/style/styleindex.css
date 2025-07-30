@@ -1,0 +1,91 @@
+body {
+  background-color: #fbffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #a7a9ab;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.emoji span {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+nav {
+  background-color: #eea93a;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+}
+
+nav ul li {
+  margin: 0 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.carros {
+  width: 250px;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+
+.carros img {
+  width: 500%;
+  max-width: 250px;
+  height: auto;
+  
+}
+
+.carros h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.carros p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.carros button {
+  background-color: #eea93a;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #a7a9ab;
+  text-align: center;
+  padding: 10px;
+}
+
+footer h3 {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+}
