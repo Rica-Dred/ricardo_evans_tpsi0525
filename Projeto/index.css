@@ -1,0 +1,58 @@
+body {
+  padding-top: 80px; /* espaço para o menu fixo */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+}
+
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("../Projeto/img/bg.jpg") no-repeat center center/cover;
+}
+
+
+.secao {
+  padding: 80px 0;
+}
+
+
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+
+.btn-warning {
+  font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+.btn-warning:hover {
+  background-color: #e0a800;
+  transform: scale(1.05);
+}
+
+
+.rodape {
+  padding: 25px;
+  font-size: 15px;
+}
+
+#sobre img {
+  border: 5px solid #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+#sobre img:hover {
+  transform: scale(1.05);
+}
+#sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
