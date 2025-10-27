@@ -1,0 +1,47 @@
+POST http://localhost:2525/imposters
+Content-Type: application/json
+
+{
+  "port": 4558,
+  "protocol": "http",
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "equals": {
+            "method": "GET",
+            "path": "/api/profile",
+            "headers": { "Authorization": "Bearer validtoken" }
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": { "Content-Type": "application/json" },
+            "body": { "username": "admin", "email": "admin@example.com" }
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        { "equals": { "method": "GET", "path": "/api/profile" } }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 403,
+            "headers": { "Content-Type": "application/json" },
+            "body": { "error": "forbidden" }
+          }
+        }
+      ]
+    }
+  ]
+}
+
+###
+GET http://localhost:4558/api/profile
+Authorization: Bearer validtoken

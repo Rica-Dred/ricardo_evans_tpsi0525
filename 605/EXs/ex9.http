@@ -1,0 +1,39 @@
+POST http://localhost:2525/imposters
+Content-Type: application/json
+
+{
+  "port": 4554,
+  "protocol": "http",
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "contains": {
+            "method": "POST",
+            "path": "/api/temperature",
+            "headers": { "Content-Type": "application/json" },
+            "body": "value"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 201,
+            "headers": { "Content-Type": "application/json" },
+            "body": { "status": "created", "message": "Temperatura registada." }
+          }
+        }
+      ]
+    }
+  ]
+}
+
+###
+POST http://localhost:4554/api/temperature
+Content-Type: application/json
+
+{
+  "sensor_id": 10,
+  "value": 22.5
+}

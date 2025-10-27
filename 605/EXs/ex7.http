@@ -1,0 +1,46 @@
+POST http://localhost:2525/imposters
+Content-Type: application/json
+
+{
+  "port": 4552,
+  "protocol": "http",
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "equals": {
+            "method": "POST",
+            "path": "/api/users",
+            "headers": { "Content-Type": "application/json" }
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 201,
+            "headers": {
+              "Content-Type": "application/json",
+              "Location": "/api/users/123"
+            },
+            "body": {
+              "id": 123,
+              "status": "created",
+              "message": "Utilizador criado com sucesso."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+
+###
+POST http://localhost:4552/api/users
+Content-Type: application/json
+
+{
+  "name": "Ana",
+  "email": "ana@example.com",
+  "idade": 25
+}
